@@ -1,0 +1,21 @@
+/* Additional app-specific styles */.app-container {  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  min-height: 100vh;}.card-glass {  background: rgba(255, 255, 255, 0.95);  backdrop-filter: blur(10px);  border: 1px solid rgba(255, 255, 255, 0.2);}/* Tab styles */.tab-button {  padding: 0.75rem 1rem;  border: none;  background: none;  cursor: pointer;  font-weight: 500;  transition: all 0.2s;  border-bottom: 2px solid transparent;}.tab-button.active {  color: rgb(37 99 235);  border-bottom-color: rgb(37 99 235);}.tab-button:hover {  background-color: rgb(243 244 246);}/* Color palette display */.color-swatch {  width: 4rem;  height: 4rem;  border-radius: 0.5rem;  border: 2px solid rgb(229 231 235);  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-swatch:hover {
+  transform: scale(1.05);
+}
+
+/* Loading animations */
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

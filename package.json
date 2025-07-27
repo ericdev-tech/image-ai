@@ -1,0 +1,19 @@
+{
+  "name": "image-ai-webapp",
+  "version": "1.0.0",
+  "description": "Advanced Image-to-Webpage Scanner & Analyzer",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+  },
+  "keywords": ["ai", "image-analysis", "web-scraping", "computer-vision"],
+  "author": "ericdev-tech",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
